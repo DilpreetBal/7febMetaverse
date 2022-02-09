@@ -9,7 +9,10 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.navbar{
+    position: sticky;
+    top: 0;
+}
 nav{
     width: 100%;
     display: flex;
@@ -26,6 +29,10 @@ nav ul li a{
     text-decoration: none;
     font-size: 20px;
 }
+nav ul li a:hover{
+    color: aqua;
+    font-size: 25px;
+}
 .logo-img{
     margin-top:23px;
     margin-left: 73px;
@@ -35,6 +42,7 @@ nav ul li a{
     margin-top: 20px;
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 60px;  
+    cursor: pointer;
 }
 .git-img{ 
     padding:20px;
@@ -44,13 +52,48 @@ nav ul li a{
     padding:20px;
     padding-bottom: 17px;
 }
-
-.di1{
-
-    display: grid;
-    width: 45%;
-    float:left;
+.metaverse-first{
+display: flex;
 }
+.di0{
+    flex: 1.5;
+}
+.di1{
+    flex: 4;
+}
+.input-user {
+    margin-top: 34px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 89px;
+    max-width: 420px;
+    color: white;
+    
+  }
+  .input-user input {
+    background: transparent;
+    border: 0px solid;
+    padding-left: 5px;
+    color: white;
+    width: 300px;
+    outline: none;
+  }
+  .input-user select {
+    background: transparent;
+    border: 0px solid;
+    color: white;
+    border-left: 2px solid rgba(255, 255, 255, 0.18);
+  }
+  .input-btn {
+    background: transparent;
+    background-color: #107BEE;
+    border: 0px solid;
+    padding: 16px;
+    border-radius: 48%;
+    justify-content: center;
+    align-items: center;
+  }
 .left-div-main{
     font-family: Outfit;
     font-style: normal;
@@ -59,7 +102,6 @@ nav ul li a{
     line-height: 88px;
     letter-spacing: 0.2px;
     color: #FFFFFF;
-    padding-left:132px;
     padding-top:137px;
 }
 .left-div-content{
@@ -70,21 +112,22 @@ nav ul li a{
     line-height: 30px;
     letter-spacing: 0.2px;
     color: #FFFFFF;
-    padding-left:132px;
     padding-top:24px;
-    max-width: 582px;
+    max-width: 400px;
     text-align: justify;
 }
 .di2{
     color:#fff;
-    display: inline-block;
-    width: 55%;
+    flex: 4;
     background-image: url('../css/images/HomeImage.png');
     background-repeat: no-repeat;
     background-position: center;
     max-width: 900px;
     height: 700px;
     position: relative;
+}
+.di3{
+    flex: 1.5;
 }
 .right-div-main-txt1{
     font-family: Outfit;
@@ -153,43 +196,216 @@ nav ul li a{
     backdrop-filter: blur(80px);
 }
 
+.raodmap-main{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    width: 100%;
+}
+.row1{
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+    width: 100%;
+    
+    
+}
+.col1{
+    border-top: 2px solid grey;
+    border-right: 2px solid grey;
+    border-top-right-radius:25px;
+}
+.col2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sub-col2-col2{
+    height: 400px;
+}
+.roadmap-main-content{
+font-family: Outfit;
+font-style: normal;
+font-weight: 500;
+font-size: 80px;
+line-height: 88px;
+letter-spacing: 0.2px;
+color: #FFFFFF;
 
+}
+.roadmap-lorem-content{
+font-family: Outfit;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 30px;
+letter-spacing: 0.2px;
+color: #FFFFFF;
+}
+.row2{
+    display: grid;
+    grid-template-columns: 10% 10% 15% 45% 15%;
+}
+.row2-col2{
+    height: 170px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img-center{
+    padding-top: 20px;
+    justify-self: center;
+    max-width: 150px;
+}
+.row2-col3{
+    display: flex;
+    flex-direction: column;
+    padding-left: 43px;
+    padding-top:20px;
+}
+.row2-col3-content{
+    font-family: Outfit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+.row2-col3-content2{
+    font-style: normal;
+font-weight: 500;
+font-size: 33px;
+color: #15C4C6;
+}
+.row2-col3-content3{
+font-family: Outfit;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 25px;
+color: white;
+max-width: 200px;
+}
+.row3{
+   display: grid; 
+   grid-template-columns: 15% auto 15%;
+}
+.row3-col1{
+}
+.row3-col2{
+    border-bottom: 2px solid grey;
+    border-left:2px solid grey;
+    height: 15vh;
+    
+}
+.row3-col3{
+    
+}
+.row4{
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+}
+.row4-col1{
 
+}
+.row4-col2{
+    border-right: 2px solid grey;
+    text-align: end;
+    justify-content: center;
+    padding: 30px;
+}
+.row4-col3{
 
+}
+.row3-col3-div{
+    max-width: 400px;
+    float:right;
+}
+.row3-col3-content3{
+font-family: Outfit;
+font-style: normal;
+color:white;
+font-weight: normal;
+font-size: 16px;
+line-height: 25px;
+}
+.row5{
+    display: grid;
+    grid-template-columns: 15% auto 15%
+}
+.row5-col1{
+    border-right: 2px solid grey;
+}
+.row5-col2{
+    border-top: 2px solid grey;
+    padding: 30px;
+}
+.row5-col3-content3{
+max-width: 500px;
+font-family: Outfit;
+font-style: normal;
+color:white;
+font-weight: normal;
+font-size: 16px;
+line-height: 25px;
+}
+.row6{
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+}
+.row6-col2{
+    border-top: 2px solid grey;
+    text-align: end;
+    border-right:2px solid grey;
+    padding: 30px;
+}
+.row6-col3{
+    
+}
+.row7{
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+}
+.row7-col1{
 
+}
+.row7-col2{
+border-top: 2px solid grey;
+border-left: 2px solid grey;
+padding: 30px;
+}
+.row8{
+    display: grid;
+    grid-template-columns: 15% auto 15%;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.row8-col2{
+    border-top: 2px solid grey;
+    border-right: 2px solid grey;
+    padding: 30px;
+    text-align: end;
+}
 
 .contact-us{
 display: flex;
 }
 .contact-border{
-    border-right: 2px solid grey;
-    flex: 1;
+    flex: 1.77;
     border-bottom: 2px solid grey;
 }
 .contact-us-main{
     border-top: 2px solid grey;
-    flex: 10;
+    border-left: 2px solid grey;
+    border-top-left-radius: 25px;
+    flex: 8.4;
     color:white; 
     border-bottom: 2px solid grey; 
   
 }
 .contact-us-no-content{
-  flex: 1;
+  flex: 2;
   border-bottom: 2px solid grey;
+  border-top: 2px solid grey;
 }
 .contact-txt{
 font-family: Outfit;
@@ -286,7 +502,7 @@ padding-top: 55px;
     padding-top: 76px;
 }
 .footer-1{
-    flex:1.5;
+    flex:2.2;
 }
 .footer-2{
     flex:1;
@@ -306,24 +522,92 @@ padding-top: 55px;
 }
 .footer-7{
     flex:3;
+    margin-top: auto;
 }
 .fingertipe{
-font-family: Outfit;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 30px;
-letter-spacing: 0.1px;
-color: #FFFFFF;
-padding-bottom: 40px;
+    font-family: Outfit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    padding-bottom: 40px;
 }
 .footer-content{
-font-family: Outfit;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 24px;
-letter-spacing: 0.2px;
-color: #FFFFFF;
-padding-bottom: 19px;
+    font-family: Outfit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    padding-bottom: 19px;
+}
+.div-footer{
+    padding-bottom: 27px;
+    display: flex;
+    align-items: center;
+}
+.footer-join{
+    font-family: Outfit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;    
+    letter-spacing: 0.2px;
+    color: #5865F2;
+    padding-left: 18px;
+}
+.footer-phone-main{
+    padding-bottom: 45px;
+    display: flex;
+    align-items: center;
+}
+.footer-phone{
+    font-family: Outfit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;    
+    letter-spacing: 0.2px;
+    padding-left: 18px;
+    
+    
+}
+.footer-twitter-img{
+    width: 27px;
+    height: 21px;
+}
+.footer-git-img{
+    width: 27px;
+    height: 21px;
+    margin-left: 24px;
+}
+.btn-git{
+    padding: 35px 18px;
+    background: #FFFFFF;
+    font-family: Outfit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #000000;
+    border:none;
+    border-radius: 100px;
+    cursor:pointer;
+    margin-right: 80px;
+    float: right;
+}
+.copyright{
+    color:white;
+    text-align: center;
+    font-family: Outfit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    padding:15px 0px;
 }
