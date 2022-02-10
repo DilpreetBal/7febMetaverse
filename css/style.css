@@ -13,6 +13,7 @@ body{
     position: sticky;
     top: 0;
 }
+
 nav{
     width: 100%;
     display: flex;
@@ -25,13 +26,15 @@ nav ul li {
     padding: 0 20px;
 }
 nav ul li a{
-    color: #fff;
+    font-family: Outfit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
     text-decoration: none;
-    font-size: 20px;
-}
-nav ul li a:hover{
-    color: aqua;
-    font-size: 25px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
 }
 .logo-img{
     margin-top:23px;
@@ -47,19 +50,24 @@ nav ul li a:hover{
 .git-img{ 
     padding:20px;
     padding-bottom: 17px;
+    padding-right: 15px;
 }
 .twitter-img{
     padding:20px;
     padding-bottom: 17px;
+    padding-left: 15px;
 }
 .metaverse-first{
 display: flex;
 }
 .di0{
-    flex: 1.5;
+    flex: 1;
 }
 .di1{
-    flex: 4;
+    flex: 5;
+}
+.input-max-width{
+max-width: 477px;
 }
 .input-user {
     margin-top: 34px;
@@ -68,6 +76,7 @@ display: flex;
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 89px;
     max-width: 420px;
+    padding: 3px;
     color: white;
     
   }
@@ -77,12 +86,14 @@ display: flex;
     padding-left: 5px;
     color: white;
     width: 300px;
+    padding: 20px;
     outline: none;
   }
   .input-user select {
     background: transparent;
     border: 0px solid;
     color: white;
+    padding-left: 13px;
     border-left: 2px solid rgba(255, 255, 255, 0.18);
   }
   .input-btn {
@@ -93,6 +104,8 @@ display: flex;
     border-radius: 48%;
     justify-content: center;
     align-items: center;
+    margin-left: 20px;
+    cursor: pointer;
   }
 .left-div-main{
     font-family: Outfit;
@@ -103,6 +116,7 @@ display: flex;
     letter-spacing: 0.2px;
     color: #FFFFFF;
     padding-top:137px;
+    max-width: 615px;
 }
 .left-div-content{
     font-family: Outfit;
@@ -113,21 +127,18 @@ display: flex;
     letter-spacing: 0.2px;
     color: #FFFFFF;
     padding-top:24px;
-    max-width: 400px;
+    max-width: 582px;
     text-align: justify;
 }
 .di2{
     color:#fff;
-    flex: 4;
+    flex: 6;
     background-image: url('../css/images/HomeImage.png');
     background-repeat: no-repeat;
     background-position: center;
-    max-width: 900px;
-    height: 700px;
+    max-width: 1070px;
+    height: 722px;
     position: relative;
-}
-.di3{
-    flex: 1.5;
 }
 .right-div-main-txt1{
     font-family: Outfit;
@@ -137,28 +148,28 @@ display: flex;
     font-size: 16px;
     line-height: 25px;
     color: #FFFFFF;
-    width: 245px;
+    max-width: 245px;
     height: 87px;
     position: absolute;
-    right: 10%;
-    top: 21.35%;
-    padding:16px;
+    right: 0.5%;
+    top: 17.35%;
+    padding:19.95px 29.7px 21.9px 26px;
     background: rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(80px);
     border-radius: 90px;
 }
 .right-div-main-txt2{
     position: absolute;
-    left: 10.38%;
+    left: 2%;
     top: 34.2%;
     font-family: Outfit;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 25px;
-    max-width: 210px;
+    max-width: 230px;
     color: #FFFFFF;
-    padding:16px;
+    padding:15px 18px 18px 18px;
     border-radius: 90px;
     background: rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(80px);
@@ -166,34 +177,37 @@ display: flex;
 .right-div-main-txt3{
     position: absolute;
     max-width: 256px;
-    left: 10.98%;
-    bottom: 31.22%;
+    left: 4.5%;
+    bottom: 27.22%;
     font-family: Outfit;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 25px;
     color: #FFFFFF;
-    padding:16px;
+    padding:25px;
     background: rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(80px);
     border-radius: 90px;
 }  
 .right-div-main-txt4{
     position: absolute;
-    max-width: 150px;
-    right: 17%;
-    bottom: 38%;
+    max-width: 193px;
+    right: 6%;
+    bottom: 32%;
     font-family: Outfit;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 25px;
     color: #FFFFFF;
-    padding:16px;
-    border-radius:90px;
+    padding:22px 20px 20px 33px;
     background: rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(80px);
+    border-radius: 90px;
+}
+.di3{
+    flex: 0.5;
 }
 
 .raodmap-main{
@@ -254,7 +268,7 @@ color: #FFFFFF;
     flex-direction: column;
 }
 .img-center{
-    padding-top: 20px;
+    padding-top: 30px;
     justify-self: center;
     max-width: 150px;
 }
@@ -283,7 +297,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 25px;
-color: white;
+color: rgba(255, 255, 255, 0.39);
 max-width: 200px;
 }
 .row3{
@@ -308,15 +322,8 @@ max-width: 200px;
 .row4-col1{
 
 }
-.row4-col2{
-    border-right: 2px solid grey;
-    text-align: end;
-    justify-content: center;
-    padding: 30px;
-}
-.row4-col3{
 
-}
+
 .row3-col3-div{
     max-width: 400px;
     float:right;
@@ -324,7 +331,7 @@ max-width: 200px;
 .row3-col3-content3{
 font-family: Outfit;
 font-style: normal;
-color:white;
+color: rgba(255, 255, 255, 0.39);
 font-weight: normal;
 font-size: 16px;
 line-height: 25px;
@@ -333,18 +340,16 @@ line-height: 25px;
     display: grid;
     grid-template-columns: 15% auto 15%
 }
-.row5-col1{
-    border-right: 2px solid grey;
-}
+
 .row5-col2{
     border-top: 2px solid grey;
-    padding: 30px;
+    padding: 50px 0px 50px 100px;
 }
 .row5-col3-content3{
 max-width: 500px;
 font-family: Outfit;
 font-style: normal;
-color:white;
+color: rgba(255, 255, 255, 0.39);
 font-weight: normal;
 font-size: 16px;
 line-height: 25px;
@@ -357,22 +362,18 @@ line-height: 25px;
     border-top: 2px solid grey;
     text-align: end;
     border-right:2px solid grey;
-    padding: 30px;
+    padding: 50px 100px 50px 0px;
 }
-.row6-col3{
-    
-}
+
 .row7{
     display: grid;
     grid-template-columns: 15% auto 15%;
 }
-.row7-col1{
 
-}
 .row7-col2{
 border-top: 2px solid grey;
 border-left: 2px solid grey;
-padding: 30px;
+padding: 50px 0px 50px 100px;
 }
 .row8{
     display: grid;
@@ -382,7 +383,7 @@ padding: 30px;
 .row8-col2{
     border-top: 2px solid grey;
     border-right: 2px solid grey;
-    padding: 30px;
+    padding: 50px 100px 50px 0px;
     text-align: end;
 }
 
@@ -403,20 +404,19 @@ display: flex;
   
 }
 .contact-us-no-content{
-  flex: 2;
+  flex: 1.8;
   border-bottom: 2px solid grey;
-  border-top: 2px solid grey;
 }
 .contact-txt{
 font-family: Outfit;
 font-style: normal;
-font-weight: 500;
+font-weight: bolder;
 font-size: 80px;
 line-height: 88px;
 letter-spacing: 0.2px;
 color: #FFFFFF;
 padding-top:80px;
-padding-left:80px;
+padding-left:60px;
 padding-bottom: 20px;
 }
 .contact-txt-body{
@@ -427,11 +427,11 @@ font-size: 18px;
 line-height: 30px;
 letter-spacing: 0.2px;
 color: #FFFFFF;
-padding-left:80px;
+padding-left:60px;
 }
 .contact-form{
     display: flex;
-    padding-left: 80px;
+    padding-left: 60px;
 }
 .contact-form-left{
     flex: 1;
@@ -505,23 +505,23 @@ padding-top: 55px;
     flex:2.2;
 }
 .footer-2{
-    flex:1;
+    flex:1.5;
 
 }
 .footer-3{
-    flex:1;
+    flex:1.5;
 }
 .footer-4{
-    flex:1;
+    flex:1.2;
     }
 .footer-5{
-    flex:2;
+    flex:1;
 }
 .footer-6{
-    flex:2;
+    flex:2.3;
 }
 .footer-7{
-    flex:3;
+    flex:2;
     margin-top: auto;
 }
 .fingertipe{
@@ -557,11 +557,16 @@ padding-top: 55px;
     letter-spacing: 0.2px;
     color: #5865F2;
     padding-left: 18px;
+    cursor:pointer;
+}
+.footer-discord-img{
+    cursor: pointer;
 }
 .footer-phone-main{
     padding-bottom: 45px;
     display: flex;
     align-items: center;
+    cursor:pointer;
 }
 .footer-phone{
     font-family: Outfit;
@@ -570,17 +575,20 @@ padding-top: 55px;
     font-size: 20px;    
     letter-spacing: 0.2px;
     padding-left: 18px;
-    
-    
+}
+.footer-twitter-git{
+    cursor: pointer;
 }
 .footer-twitter-img{
     width: 27px;
     height: 21px;
+    cursor: pointer;
 }
 .footer-git-img{
     width: 27px;
     height: 21px;
     margin-left: 24px;
+    cursor: pointer;
 }
 .btn-git{
     padding: 35px 18px;
@@ -596,7 +604,9 @@ padding-top: 55px;
     border:none;
     border-radius: 100px;
     cursor:pointer;
-    margin-right: 80px;
+    position: sticky;
+    bottom: 2%;
+    right: 2%;
     float: right;
 }
 .copyright{
@@ -609,5 +619,63 @@ padding-top: 55px;
     line-height: 24px;
     letter-spacing: 0.2px;
     color: #FFFFFF;
-    padding:15px 0px;
+    padding:120px 0px 0px 0px;
+}
+
+.row4-col2{
+    border-right: 2px solid grey;
+    text-align: end;
+    justify-content: center;
+    padding: 50px 100px 50px 0px;
+}
+.row4-col3{
+position: relative;
+}
+.row6-col3{
+position: relative;
+}
+.row8-col3{
+    position: relative;
+}
+.image-right{
+max-width: 170px;
+width: 170px;
+height: 120px;
+background: rgba(29, 51, 64, 1);
+position: absolute;
+border-radius: 25px;
+text-align: center;
+left: -35%;
+top:28%;
+}
+.img-right{
+    text-align: center;
+    width: 130px;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.row5-col1{
+    border-right: 2px solid grey;
+    position: relative;
+}
+.row7-col1{
+    position: relative;
+}
+.image-left{
+    max-width: 170px;
+    width: 170px;
+    height: 120px;
+    background: rgba(29, 51, 64, 1);
+    position: absolute;
+    border-radius: 25px;
+    text-align: center;
+    right: -36%;
+    top:28%;
+    }
+.img-left{
+    text-align: center;
+    width: 130px;
+    justify-content: center;
+    padding-top: 10px;
 }
